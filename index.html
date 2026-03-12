@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Students Academic Data Storage</h1>
+
+        <nav>
+            <ul>
+                <li><a href="pages/view.php">View Students</a></li>
+                <li><a href="pages/update.php">Edit / Remove Student</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+        <h2>Add Student</h2>
+
+        <form action="action/insert.php" method="POST">
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Age</label>
+            <input type="number" name="age" min="1" max="100">
+
+            <label>Course</label>
+            <select name="course">
+                <option>DBMS</option>
+                <option>JS</option>
+                <option>OS</option>
+                <option>DAA</option>
+                <option>DSA</option>
+                <option>Python</option>
+            </select>
+
+            <label>Marks</label>
+            <input type="number" name="marks" min="0" max="100">
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+</body>
+
+</html>

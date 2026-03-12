@@ -1,0 +1,41 @@
+table{
+    width:80%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#3498db;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+.search-form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.search-bar{
+    width:200px;
+    padding:8px;
+}
+
+.srch-btn{
+    padding:8px 15px;
+    background:#3498db;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
